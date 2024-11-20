@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: FadeIn 0.3s ease-in-out;
+}
+
+.bottom-bar {
+    box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ql-snow {
+    border: none !important;
+}
+
+.post-content img {
+    max-height: 200px;
+}
+
+.hide-toolbar .ql-toolbar {
+    display: none !important;
+}
+
+.ql-toolbar {
+    animation: FadeIn 0.3s ease-in-out;
+}
+
+.text-border {
+    text-shadow:
+        0px -1px 0px #b3b3b3,
+        1px 0px 0px #b3b3b3,
+        0px 1px 0px #b3b3b3,
+        -1px 0px 0px #b3b3b3;
+}
+
+.fade-b-in {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #f0fdf4 100%);
+}
+
+.hidden-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.hidden-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
